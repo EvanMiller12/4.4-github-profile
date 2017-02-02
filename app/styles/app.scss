@@ -1,0 +1,57 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+///header
+
+.search-github {
+  display: inline-block;
+}
+
+.top-nav {
+    display: inline-block;
+
+  li{
+    display: inline-block;
+    padding-right: 20px;
+
+  }
+}
+
+  .dropdown{
+    display: inline-block;
+    float: right;
+  }
+
+  .page-nav {
+
+    li{
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+
+  .repository-title {
+
+    h2{
+      font-size: 20px;
+    }
+  }
+
+  .right {
+    padding-left: 110px;
+  }
