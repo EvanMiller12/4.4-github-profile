@@ -19,7 +19,7 @@ $.ajax(userNameUrl).done(function(data){
   // console.log(data);
   var source = $('#userinfo-template').html();
   var template = Handlebars.compile(source);
-  $('.user-info').append(template(data));
+  $('.left-col').append(template(data));
 });
 
 var userRepoUrl = 'https://api.github.com/users/EvanMiller12/repos';

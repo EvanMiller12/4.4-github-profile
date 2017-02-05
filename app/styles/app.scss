@@ -16,42 +16,275 @@ img {
   max-width: 100%;
 }
 
-///header
+body {
+  font-family: helvetica;
+  line-height: 1.5;
+}
+
+/*
+*header
+*/
+
+.header {
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.header-contain {
+  width: 980px;
+  padding: 0px;
+}
+
+svg.octicon {
+  vertical-align: middle;
+}
 
 .search-github {
   display: inline-block;
+
+  input {
+    width: 365px;
+  }
 }
 
 .top-nav {
-    display: inline-block;
+  display: inline-block;
+  padding-left: 15px;
 
   li{
     display: inline-block;
     padding-right: 20px;
+  }
 
+  a {
+    color: #333333;
+    text-decoration: none;
   }
 }
 
-  .dropdown{
-    display: inline-block;
-    float: right;
+.dropdown{
+  display: inline-block;
+  float: right;
+}
+
+.glyphicon.glyphicon-plus {
+  font-size: 12px;
+}
+
+.header-btn {
+  background-color: inherit;
+  border: transparent;
+}
+
+  /*
+  *body
+  */
+
+  .main-content {
+    width: 1012px;
+    border-bottom: 1px solid #F3F3F3;
+  }
+
+  .left-col {
+    float: left;
+    width: 25%;
+    padding-right: 16px;
+
+    img {
+      border-radius: 5%;
+    }
+  }
+
+  .avatar-name {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 12px;
+
+    h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      color: #666;
+      margin-top: 0px;
+    }
+
+    p {
+      color: #767676;
+    }
+  }
+
+  .email-location {
+    padding-top: 8px;
+  }
+
+  .right-col {
+    float: left;
+    width: 75%;
+    padding-left: 8px;
   }
 
   .page-nav {
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEEEEE;
 
-    li{
-      display: inline-block;
-      padding-right: 20px;
+    a{
+      font-size: 14px;
+      color: #767676;
+      padding: 20px;
+      text-decoration: none;
+    }
+  }
+
+  .counter {
+    font-size: 12px;
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 2px 5px;
+
+  }
+
+  .filter-repos {
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .search-repos {
+    display: inline-block;
+    padding-right: 24px;
+    width: 56%;
+
+    .form-control {
+      width: 100%;
+    }
+  }
+
+  .filter-repos-btn {
+    display: inline-block;
+    text-align: right;
+  }
+
+  .repo-type {
+    display: inline-block;
+  }
+
+  .odd-text {
+    font-style: normal;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+
+  .type {
+    background-color: #ddd;
+    background-image: linear-gradient(#eee, #ddd);
+    border-color: #ccc;
+  }
+
+  .repo-language {
+    display: inline-block;
+  }
+
+  .language {
+    background-color: #ddd;
+    background-image: linear-gradient(#eee, #ddd);
+    border-color: #ccc;
+  }
+
+  .new-repo {
+    margin-left: 16px;
+    background-color: #6cc644;
+    background-image: linear-gradient(#91dd70, #55ae2e);
+    border: 1px solid #5aad35;
+
+    a {
+    color: #FFF;
     }
   }
 
   .repository-title {
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     h2{
       font-size: 20px;
+      font-weight: 600;
     }
   }
 
+  .repository-info {
+    font-size: 12px;
+  }
+
+  .language-color {
+    background-color: #e44b23;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .left {
+    margin-right: 16px;
+  }
+
   .right {
-    padding-left: 110px;
+    font-size: 12px;
+    // padding-left: 50px;
+  }
+
+  .repo-temp-insert {
+    padding-bottom: 60px;
+  }
+
+  //footer
+
+  .copyright {
+
+    span {
+      padding-left: 50px;
+      color: #767676;
+    }
+  }
+
+  .saftey-nav {
+    display: inline-block;
+    padding-top: 40px;
+
+    li {
+      display: inline-block;
+      padding-right: 15px;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  .more-info-nav {
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+    padding-top: 40px;
+
+    li {
+      display: inline-block;
+      padding-right: 15px;
+    }
+
+    a{
+      font-size: 12px;
+    }
+  }
+
+  footer {
+    height: 100px;
   }
