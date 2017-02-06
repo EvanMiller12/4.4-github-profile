@@ -31,7 +31,7 @@ body {
 }
 
 .header-contain {
-  width: 980px;
+  min-width: 980px;
   padding: 0px;
 }
 
@@ -128,16 +128,15 @@ svg.octicon {
   }
 
   .page-nav {
-    padding-left: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #EEEEEE;
+    display: table;
 
     a{
+      display: table-cell;
       font-size: 14px;
       color: #767676;
       padding: 20px;
       text-decoration: none;
+      border-bottom: 2px solid transparent;
     }
   }
 
@@ -150,6 +149,7 @@ svg.octicon {
   }
 
   .filter-repos {
+    border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -248,9 +248,9 @@ svg.octicon {
   //footer
 
   .copyright {
+    // width: 980px;
 
     span {
-      padding-left: 50px;
       color: #767676;
     }
   }
@@ -270,10 +270,11 @@ svg.octicon {
   }
 
   .more-info-nav {
-    display: inline-block;
     float: right;
-    padding-right: 50px;
+    display: inline-block;
     padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 0px;
 
     li {
       display: inline-block;
@@ -283,6 +284,11 @@ svg.octicon {
     a{
       font-size: 12px;
     }
+  }
+
+  a.github-logo {
+    padding-left: 100px;
+    // padding-right: 100px;
   }
 
   footer {
